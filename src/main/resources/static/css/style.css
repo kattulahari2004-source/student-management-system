@@ -1,0 +1,557 @@
+/* ============================= */
+/* GLOBAL */
+/* ============================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+header {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: white;
+    padding: 35px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+header p {
+    margin: 8px 0 0;
+    color: #dbeafe;
+    font-size: 15px;
+}
+
+
+/* ============================= */
+/* DASHBOARD */
+/* ============================= */
+
+.dashboard {
+    width: 92%;
+    max-width: 1200px;
+    margin: 30px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.stat-card {
+    background: white;
+    padding: 25px;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.06);
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+.stat-card h3 {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+}
+
+.stat-card p {
+    margin: 10px 0 0;
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+    color: #2563eb;
+}
+
+
+/* ============================= */
+/* MAIN CONTAINER */
+/* ============================= */
+
+.main-container {
+    width: 92%;
+    max-width: 1200px;
+
+    margin: 30px auto;
+}
+
+
+/* ============================= */
+/* CARDS */
+/* ============================= */
+
+.card {
+    background: white;
+
+    padding: 28px;
+
+    margin-bottom: 25px;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 22px;
+
+    color: #1e293b;
+
+    font-size: 21px;
+
+    font-weight: 650;
+}
+
+
+/* ============================= */
+/* FORM */
+/* ============================= */
+
+form {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.form-group input {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    color: #1e293b;
+
+    background: #ffffff;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+.form-group input::placeholder {
+    color: #94a3b8;
+}
+
+.form-group input:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+
+/* ============================= */
+/* VALIDATION */
+/* ============================= */
+
+.form-group small {
+    color: #dc2626;
+
+    font-size: 12px;
+
+    margin-top: 5px;
+
+    min-height: 16px;
+}
+
+.input-error {
+    border: 2px solid #dc2626 !important;
+
+    background: #fff7f7 !important;
+}
+
+.input-error:focus {
+    box-shadow:
+        0 0 0 3px rgba(220, 38, 38, 0.10) !important;
+}
+
+.input-success {
+    border: 2px solid #16a34a !important;
+}
+
+
+/* ============================= */
+/* ADD / UPDATE BUTTON */
+/* ============================= */
+
+.add-btn {
+    grid-column: 1 / -1;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #1d4ed8
+    );
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+    box-shadow:
+        0 4px 10px rgba(37, 99, 235, 0.20);
+}
+
+.add-btn:hover {
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 6px 14px rgba(37, 99, 235, 0.25);
+}
+
+.add-btn:active {
+    transform: translateY(0);
+}
+
+
+/* ============================= */
+/* SEARCH */
+/* ============================= */
+
+.search-box {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 22px;
+}
+
+.search-box input {
+    max-width: 280px;
+
+    padding: 12px 14px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+.search-box input:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+.search-box button {
+    padding: 11px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.search-box button:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+}
+
+.search-box button:last-child {
+    background: #64748b;
+}
+
+.search-box button:last-child:hover {
+    background: #475569;
+}
+
+
+/* ============================= */
+/* TABLE */
+/* ============================= */
+
+.table-container {
+    width: 100%;
+
+    overflow-x: auto;
+
+    border-radius: 10px;
+
+    border: 1px solid #e2e8f0;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 900px;
+}
+
+thead {
+    background: #1e293b;
+}
+
+th {
+    color: white;
+
+    padding: 14px 12px;
+
+    text-align: center;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+td {
+    padding: 13px 12px;
+
+    border-bottom: 1px solid #e2e8f0;
+
+    text-align: center;
+
+    font-size: 13px;
+
+    color: #475569;
+}
+
+tbody tr {
+    transition: 0.15s;
+}
+
+tbody tr:hover {
+    background: #f8fafc;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* ============================= */
+/* EDIT BUTTON */
+/* ============================= */
+
+.edit-btn {
+    background: #f59e0b;
+
+    padding: 7px 12px;
+
+    margin-right: 5px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.edit-btn:hover {
+    background: #d97706;
+
+    transform: translateY(-1px);
+}
+
+
+/* ============================= */
+/* DELETE BUTTON */
+/* ============================= */
+
+.delete-btn {
+    background: #ef4444;
+
+    padding: 7px 12px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.delete-btn:hover {
+    background: #dc2626;
+
+    transform: translateY(-1px);
+}
+
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 28px 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .dashboard {
+        width: 95%;
+
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .main-container {
+        width: 95%;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    .add-btn {
+        grid-column: auto;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box input {
+        max-width: 100%;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+}
+/* ============================= */
+/* NOTIFICATION */
+/* ============================= */
+
+.notification {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+
+    min-width: 280px;
+    max-width: 350px;
+
+    padding: 15px 20px;
+
+    border-radius: 8px;
+
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
+    display: none;
+
+    z-index: 1000;
+}
+
+
+/* Success */
+
+.notification.success {
+    display: block;
+    background: #16a34a;
+}
+
+
+/* Error */
+
+.notification.error {
+    display: block;
+    background: #dc2626;
+}

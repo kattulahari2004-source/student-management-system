@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management System</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+<!-- Notification -->
+<div id="notification" class="notification"></div>
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>Student Management System</h1>
+
+        <p>Manage student information easily</p>
+
+    </header>
+
+
+
+    <!-- Dashboard -->
+
+    <div class="dashboard">
+
+
+        <div class="stat-card">
+
+            <h3>Total Students</h3>
+
+            <p id="totalStudents">0</p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <h3>Average Marks</h3>
+
+            <p id="averageMarks">0</p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <h3>Highest Marks</h3>
+
+            <p id="highestMarks">0</p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="main-container">
+
+
+        <!-- Add Student Card -->
+
+        <div class="card">
+
+            <h2>Add New Student</h2>
+
+
+            <form id="studentForm">
+
+
+                <!-- Name -->
+
+                <div class="form-group">
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Student Name"
+                        required>
+
+                    <small id="nameError"></small>
+
+                </div>
+
+
+
+                <!-- Email -->
+
+                <div class="form-group">
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Email"
+                        required>
+
+                    <small id="emailError"></small>
+
+                </div>
+
+
+
+                <!-- Phone -->
+
+                <div class="form-group">
+
+                    <input
+                        type="text"
+                        id="phone"
+                        placeholder="Phone Number"
+                        required>
+
+                    <small id="phoneError"></small>
+
+                </div>
+
+
+
+                <!-- Course -->
+
+                <div class="form-group">
+
+                    <input
+                        type="text"
+                        id="course"
+                        placeholder="Course"
+                        required>
+
+                    <small id="courseError"></small>
+
+                </div>
+
+
+
+                <!-- Department -->
+
+                <div class="form-group">
+
+                    <input
+                        type="text"
+                        id="department"
+                        placeholder="Department"
+                        required>
+
+                    <small id="departmentError"></small>
+
+                </div>
+
+
+
+                <!-- Marks -->
+
+                <div class="form-group">
+
+                    <input
+                        type="number"
+                        id="marks"
+                        placeholder="Marks"
+                        required>
+
+                    <small id="marksError"></small>
+
+                </div>
+
+
+
+                <!-- Button -->
+
+                <button
+                    type="submit"
+                    class="add-btn">
+
+                    + Add Student
+
+                </button>
+
+
+            </form>
+
+        </div>
+
+
+
+        <!-- Student List Card -->
+
+        <div class="card">
+
+            <h2>Student List</h2>
+
+
+            <!-- Search -->
+
+            <div class="search-box">
+
+                <input
+                    type="number"
+                    id="searchId"
+                    placeholder="Enter Student ID">
+
+
+                <button onclick="searchStudent()">
+                    Search
+                </button>
+
+
+                <button onclick="loadStudents()">
+                    Show All
+                </button>
+
+            </div>
+
+
+
+            <!-- Table -->
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>ID</th>
+
+                            <th>Name</th>
+
+                            <th>Email</th>
+
+                            <th>Phone</th>
+
+                            <th>Course</th>
+
+                            <th>Department</th>
+
+                            <th>Marks</th>
+
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="studentTableBody">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
