@@ -6,16 +6,17 @@ The application provides a simple interface to manage student records and perfor
 ## 🚀 Live Demo
 
 [Open Live Student Management System](https://student-management-system-production-916d.up.railway.app)
-## Project Highlights
+## 🚀 Project Highlights
 
-- Built a complete CRUD-based Student Management System using Spring Boot.
-- Developed REST APIs for student management.
-- Integrated PostgreSQL using Spring Data JPA.
-- Created a responsive frontend using HTML, CSS, and JavaScript.
-- Implemented input validation for student details.
-- Added dashboard statistics such as total students, average marks, and highest marks.
+- Built a full-stack Student Management System using Java and Spring Boot.
+- Developed REST APIs for creating, viewing, updating, and deleting student records.
+- Integrated PostgreSQL database using Spring Data JPA and Hibernate.
+- Built a responsive frontend using HTML, CSS, and JavaScript.
+- Implemented input validation for student name, email, phone number, course, department, and marks.
+- Added dashboard statistics including total students, average marks, and highest marks.
 - Tested REST APIs using Postman.
-
+- Containerized the application using Docker.
+- Deployed the application on Railway with a live public URL.
 ## Features
 
 - Add new students
