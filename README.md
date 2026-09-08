@@ -3,7 +3,9 @@
 A web-based Student Management System built using Java, Spring Boot, Spring Data JPA, PostgreSQL, HTML, CSS, and JavaScript.
 
 The application provides a simple interface to manage student records and perform CRUD operations.
+## 🚀 Live Demo
 
+[Open Live Student Management System](https://student-management-system-production-916d.up.railway.app)
 ## Project Highlights
 
 - Built a complete CRUD-based Student Management System using Spring Boot.
